@@ -1,0 +1,13 @@
+<ion-view style="" class=" " id="page3" title="Categorias">
+    <ion-content class="has-header" padding="true">
+        <ion-list id="categorias-list1">
+            
+            <ion-item style="" ng-repeat="category in categories" id="categorias-list-item4"
+            menu-close href="#/side-menu21/contentByCategory/{{category.id}}">
+                <span ng-bind-html="category.title"></span>
+                <span class="badge badge-assertive">{{category.post_count}}</span>
+            </ion-item>
+ 
+        </ion-list>
+    </ion-content>
+</ion-view>
